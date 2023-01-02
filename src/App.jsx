@@ -1,6 +1,9 @@
 import React from "react";
+import About from "./Components/About";
 import Banner from "./Components/Banner";
+import Companies from "./Components/Companies";
 import Map_section from "./Components/Map_section";
+import Work from "./Components/Work";
 
 const App = () => {
   return (
@@ -12,6 +15,15 @@ const App = () => {
         </div>
         <div>
           <Map_section />
+        </div>
+        <div>
+          <Companies />
+        </div>
+        <div>
+          <About />
+        </div>
+        <div>
+          <Work />
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div>
       <div className="">
-        <section className="relative h-[80vh] ss:h-[90vh]  sl:h-[90vh] sm:h-[70vh] md:h-[70vh] lg:h-[70vh] xl:h-[70vh] 2xl:h-[70vh] 4xl:h-[70vh]  overflow-hidden ">
+        <section className="relative h-[35rem] sl:h-[45rem] md:h-[35rem] 4xl:h-[45rem] overflow-hidden ">
           <img
             src="/Images/banner-1.png"
             alt=""
@@ -22,10 +22,10 @@ const Banner = () => {
               <p className=" text-center md:text-left text-sm md:text-[15px] font-extralight xl:mb-2 opacity-40">
                 Build the Future with
               </p>
-              <h1 className="text-center md:text-left text-4xl xl:text-6xl font-medium tracking-wider leading-[2.5rem] md:leading-[2.2rem] lg:leading-[3rem] xl:leading-[3.8rem]">
+              <h1 className="text-center md:text-left text-2xl xl:text-6xl font-medium tracking-wide xl:tracking-wider leading-[1.5rem] md:leading-[2.2rem] lg:leading-[3rem] xl:leading-[3.8rem]">
                 Blockchain technology and Currency
               </h1>
-              <div className="flex justify-center md:justify-start ">
+              <div className="flex justify-center md:justify-start hidden md:block">
                 <button className="px-8 md:px-4 md:py-2 py-3 lg:px-8 lg:py-3 text-black xl:text-sm font-semibold rounded-md bg-[#00e3a5] my-5 shadow-md shadow-[#00e3a5]">
                   Get Whitepaper
                 </button>
@@ -33,6 +33,11 @@ const Banner = () => {
             </div>
             <div className="md:flex-1 mt-2 z-50 md:mt-0 banner-img lg:p-[2rem] 3xl:p-[4rem] 4xl:p-[5rem] lg:box-border">
               <img src="/Images/crypto.png" alt="" />
+            </div>
+            <div className="flex justify-center md:justify-start  md:hidden">
+              <button className="px-6 md:px-4 md:py-2 py-2 lg:px-8 lg:py-3 text-xs text-black xl:text-sm font-semibold rounded-md bg-[#00e3a5] my-5 shadow-md shadow-[#00e3a5]">
+                Get Whitepaper
+              </button>
             </div>
           </section>
         </section>

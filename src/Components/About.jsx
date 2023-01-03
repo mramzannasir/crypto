@@ -27,7 +27,7 @@ const About = () => {
                 </p>
               </div>
               <div className="flex justify-center md:justify-start w-full items-center my-4 ">
-                <button className="py-2 px-8 text-sm font-semibold 2xl:font-normal border-[#00E3A5] outline-none border-[1px] md:shadow-none shadow-md shadow-[#00E3A5]">
+                <button className="py-2 px-8 text-sm rounded-md font-semibold 2xl:font-normal border-[#00E3A5] outline-none border-[1px] md:shadow-none shadow-md shadow-[#00E3A5]">
                   Learn More
                 </button>
               </div>

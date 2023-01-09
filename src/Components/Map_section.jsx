@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Map_section = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
     <>
       <section className="mt-8">
         <div>
-          <p className="text-center text-sm text-[#80AB9E]">Achievements</p>
+          <p
+            data-aos="fade-left"
+            className="text-center text-sm text-[#80AB9E]">
+            Achievements
+          </p>
         </div>
 
         {/* Mini box */}
 
-        <div className="flex justify-center items-center mt-4 md:mt-5 flex-col w-[100%] h-auto 4xl:mt-10">
+        <div
+          data-aos="fade-right"
+          className="flex justify-center items-center mt-4 md:mt-5 flex-col w-[100%] h-auto 4xl:mt-10">
           <div className="lg:w-[30.3%]"></div>
           <div className="lg:w-[39.3%]">
             <h1 className="text-2xl w-[100%] font-medium md:text-3xl 5xl:text-4xl  text-center mt-2 md:mt-2 leading-[2rem] md:leading-none">
@@ -22,7 +35,9 @@ const Map_section = () => {
         <div className="flex justify-center items-center mt-4 md:mt-5 flex-col w-[100%]">
           <div className="lg:w-[30.3%]"></div>
 
-          <div className="flex lg:w-[39.3%] gap-9 sm:gap-0  mt-3 items-center justify-between flex-1">
+          <div
+            data-aos="zoom-in"
+            className="flex lg:w-[39.3%] gap-9 sm:gap-0  mt-3 items-center justify-between flex-1">
             <div className="text-center">
               <h1 className="text-xl md:text-2xl 4xl:text-3xl font-medium text-[#00E3A5]">
                 1M+

@@ -1,19 +1,30 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Work = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
     <>
       <main className="mt-20">
-        <section className="bg-[#09251E] bg-opacity-20 rounded-tl-[10rem] rounded-bl-[10rem] md:rounded-bl-none md:rounded-tl-none py-3  md:py-6 2xl:py-11">
+        <section className="bg-[#09251E] bg-opacity-20 rounded-tl-[6rem] rounded-bl-[6rem] md:rounded-bl-none md:rounded-tl-none py-3  md:py-6 2xl:py-11">
           <div className="px-3">
-            <h1 className="text-2xl font-medium -mt-14 md:mt-0 text-center text-[#F5FBF2]">
+            <h1
+              data-aos="zoom-in"
+              className="text-2xl font-medium -mt-14 md:mt-0 text-center text-[#F5FBF2]">
               How do we work or system and our journey
             </h1>
           </div>
           {/* For Mobile */}
           <div>
             {/* 1st */}
-            <div className="flex justify-end md:justify-between items-center bg mt-6 rounded-tl-[5rem] rounded-bl-[5rem] p-6 md:px-[5rem] lg:px-[9rem] xl:px-[9rem] 2xl:px-[15rem]">
+            <div
+              data-aos="fade-left"
+              className="flex justify-end md:justify-between items-center bg mt-6 rounded-tl-[5rem] rounded-bl-[5rem] p-6 md:px-[5rem] lg:px-[9rem] xl:px-[9rem] 2xl:px-[15rem]">
               <div className="md:flex md:gap-2 md:items-center">
                 <h1 className="text-5xl fancy-text md:text-8xl">01</h1>
                 <div className="md:pr-[10rem]">
@@ -32,7 +43,9 @@ const Work = () => {
               </div>
             </div>
             {/* 2nd */}
-            <div className="flex justify-start  md:justify-between items-center bg mt-6 rounded-tr-[5rem] rounded-br-[5rem] p-6 md:px-[5rem] lg:px-[9rem] xl:px-[9rem] 2xl:px-[15rem]">
+            <div
+              data-aos="fade-right"
+              className="flex justify-start  md:justify-between items-center bg mt-6 rounded-tr-[5rem] rounded-br-[5rem] p-6 md:px-[5rem] lg:px-[9rem] xl:px-[9rem] 2xl:px-[15rem]">
               <div>
                 <img src="/Images/research.png" alt="" />
               </div>
@@ -60,7 +73,9 @@ const Work = () => {
               </div>
             </div>
             {/* 3rd */}
-            <div className="flex justify-end md:justify-between items-center bg mt-6 rounded-tl-[5rem] rounded-bl-[5rem] p-6 md:px-[5rem] lg:px-[9rem] xl:px-[9rem] 2xl:px-[15rem]">
+            <div
+              data-aos="fade-left"
+              className="flex justify-end md:justify-between items-center bg mt-6 rounded-tl-[5rem] rounded-bl-[5rem] p-6 md:px-[5rem] lg:px-[9rem] xl:px-[9rem] 2xl:px-[15rem]">
               <div className="md:flex md:gap-2 md:items-center">
                 <h1 className="text-5xl fancy-text md:text-8xl">03</h1>
                 <div className="md:pr-[10rem]">
@@ -77,32 +92,13 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-center items-center">
+          <div
+            data-aos="flip-left"
+            className="w-full flex justify-center items-center">
             <button className="my-4 md:mt-8 border-[#00E3A5] border-[1px] rounded-md shadow-md shadow-[#00E3A5] md:shadow-none px-8 py-2">
               Load More
             </button>
           </div>
-
-          {/* fffffffffffffffffff */}
-
-          <main className="mt-6">
-            <section className="relative pt-4 pb-8 w-full h-[22rem] overflow-hidden">
-              <div className="absolute top-0 left-0 h-full w-full community-img">
-                {" "}
-                <img src="/Images/community-bg.png" alt="" />
-              </div>
-              {/* Overlay */}
-              <div className="bg-2 absolute top-0 left-0 h-[100%] w-[100%]"></div>
-              {/* ________________________________Design________________________________ */}
-              <main className="absolute flex justify-center items-center top-0 left-0 bottom-0  h-[100%] w-[100%]  ">
-                <div className="  ">
-                  <h1>Hi this is an amazing project</h1>
-                </div>
-              </main>
-            </section>
-          </main>
-
-          {/* fffffffffffffffffffffffff */}
         </section>
       </main>
     </>

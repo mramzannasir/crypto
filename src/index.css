@@ -4,6 +4,9 @@
 @tailwind utilities;
 
 @layer components {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-family: "Poppins", sans-serif;
     background: #0d0d0d;
@@ -99,6 +102,18 @@
     -webkit-text-stroke-color: #1f4439;
   }
   .community-img {
+    background-size: cover;
+    background-position: center;
+    background-image: url("..//public/Images/community-bg.png");
+  }
+  .pc_community img {
+    height: 100%;
+    width: 100%;
+  }
+  .wide-bg {
+    background: rgba(0, 221, 156, 0.1);
+  }
+  .fbg img {
     height: 100%;
     width: 100%;
   }

@@ -1,9 +1,18 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Companies = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
     <div className=" px-1 ss:px-3 lg:px-6 2xl:px-8 4xl:px-9 my-12 lg:my-16  4xl:my-18">
-      <section className="flex rounded-full bg-[#091d18] opacity-50  py-6 px-2 ss:px-5 md:px-9 xl:px-10 4xl:px-14 5xl:px-16 lg:py-10 5xl:py-11">
+      <section
+        data-aos="fade-up"
+        className="flex rounded-full bg-[#091d18] opacity-50  py-6 px-2 ss:px-5 md:px-9 xl:px-10 4xl:px-14 5xl:px-16 lg:py-10 5xl:py-11">
         <div className="md:hidden w-full">
           <div className="img-1_4m_mob flex justify-center items-center w-full">
             {" "}

@@ -1,6 +1,13 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
   return (
     <>
       <main className="py-6 md:py-9 4xl:py-24">
@@ -9,7 +16,7 @@ const About = () => {
             <img className="" src="/Images/about-bg.png" alt="" />
           </div>
           <div className="md:absolute top-0 left-0 h-full w-full md:pl-4 lg:pl-7 flex flex-col md:flex-row md:items-center md:z-50 md:gap-3 xl:gap-6 2xl:gap-8">
-            <div className="flex-1">
+            <div data-aos="fade-right" className="flex-1">
               <h1 className="text-center md:text-left lg:text-3xl text-2xl font-medium text-[#F5FBF2]">
                 About us
               </h1>
@@ -32,7 +39,7 @@ const About = () => {
                 </button>
               </div>
             </div>
-            <div className="about-2 flex-1  ">
+            <div data-aos="fade-left" className="about-2 flex-1  ">
               <img src="/Images/about-asset.png" alt="Cards" />
             </div>
           </div>
